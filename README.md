@@ -1,18 +1,18 @@
 # Final Year Project - Backend technology
-### 1. Techniques: 
+## 1. Techniques: 
 - NodeJS: JavaScript runtime
    
 - ExpressJS: NodeJS's framework
    
 - MongoDB: NoSQL database
-### 2. Softwares: 
+## 2. Softwares: 
 - VS Code 
    
 - NodeJS  
    
 - MongoDB Server + Compass
-### 3. Schedule:
-#### Lesson 1: (3 slots)
+## 3. Schedule:
+### Lesson 1: (3 slots)
 - Course introduction
 
 - Software installation + environment setup
@@ -27,10 +27,10 @@
 
 - Setup relationship between collections
 
-- Form input **validation**
+- Form input **validation**: client-side, server-side
 
 - Implement **CRUD** features: Create, Read, Update, Delete
-#### Lesson 2: (3 slots)
+### Lesson 2: (3 slots)
 - Implement features: **search, sort**
 
 - Install libraries: *express-session, bcryptjs*
@@ -46,7 +46,7 @@
 - **File/image upload**
 
 - **Fetch API**
-#### Lesson 4: (2 slots)
+### Lesson 4: (2 slots)
 - Install libraries: *cors, jsonwebtoken*
 
 - Create and enable **API sharing** (for consuming API in front-end)
