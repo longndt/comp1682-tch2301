@@ -1,16 +1,16 @@
-# Final Year Project (part 2)
+# Final Year Project - Backend technology
 ### 1. Techniques: 
-   NodeJS: JavaScript runtime
+- NodeJS: JavaScript runtime
    
-   ExpressJS: NodeJS's framework
+- ExpressJS: NodeJS's framework
    
-   MongoDB: NoSQL database
+- MongoDB: NoSQL database
 ### 2. Softwares: 
-   VS Code 
+- VS Code 
    
-   NodeJS  
+- NodeJS  
    
-   MongoDB Server + Compass
+- MongoDB Server + Compass
 ### 3. Schedule:
 #### Lesson 1: (3 slots)
 - Course introduction
@@ -21,24 +21,34 @@
 
 - Initialize demo project using ExpressJS
 
-- Install necessary libraries using NPM: nodemon, mongoose, body-parser
+- Install necessary libraries using NPM: *nodemon, mongoose, body-parser*
 
 - Setup connection from ExpressJS to MongoDB 
 
 - Setup relationship between collections
 
-- Implement CRUD features
+- Form input **validation**
+
+- Implement **CRUD** features: Create, Read, Update, Delete
 #### Lesson 2: (3 slots)
-- Implement features: search, sort, filter
-- Install libraries: express-session, bcryptjs
-- Authentication (login/logout + register)
-- Authorization  (role-based access: admin, user,...)
-- Password encryption
+- Implement features: **search, sort**
+
+- Install libraries: *express-session, bcryptjs*
+
+- **Authentication** (login/logout + register)
+
+- **Authorization**  (role-based access: admin, user,...)
+
+- **Password encryption**
 #### Lesson 3: (2 slots)
-- Install libraries: multer, axios
-- File/image upload
-- Fetch API
+- Install libraries: *multer, axios*
+
+- **File/image upload**
+
+- **Fetch API**
 #### Lesson 4: (2 slots)
-- Install libraries: cors, jsonwebtoken
-- Create and enable API sharing (for consuming API in front-end)
-- Create JWT token (for authentication in front-end)
+- Install libraries: *cors, jsonwebtoken*
+
+- Create and enable **API sharing** (for consuming API in front-end)
+
+- Create **JSON Web Token** (for authentication in front-end)
