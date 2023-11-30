@@ -42,7 +42,7 @@
 - **Authorization**  (role-based access: admin, user,...)
 
 - **Password encryption**
-#### Lesson 3: (2 slots)
+### Lesson 3: (2 slots)
 - Install libraries: *multer, axios*
 
 - **File/image upload**
