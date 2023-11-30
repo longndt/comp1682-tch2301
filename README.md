@@ -1,21 +1,32 @@
 # Final Year Project (part 2)
 ### 1. Techniques: 
    NodeJS: JavaScript runtime
+   
    ExpressJS: NodeJS's framework
+   
    MongoDB: NoSQL database
 ### 2. Softwares: 
    VS Code 
+   
    NodeJS  
+   
    MongoDB Server + Compass
 ### 3. Schedule:
 #### Lesson 1: (3 slots)
 - Course introduction
+
 - Software installation + environment setup
+
 - Create database, collection (table) with MongoDB Compass 
+
 - Initialize demo project using ExpressJS
+
 - Install necessary libraries using NPM: nodemon, mongoose, body-parser
+
 - Setup connection from ExpressJS to MongoDB 
+
 - Setup relationship between collections
+
 - Implement CRUD features
 #### Lesson 2: (3 slots)
 - Implement features: search, sort, filter
