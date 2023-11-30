@@ -3,6 +3,8 @@
 - NodeJS: JavaScript runtime
    
 - ExpressJS: NodeJS's framework
+
+- Handlebars (hbs): NodeJS's template/view engine
    
 - MongoDB: NoSQL database
 ## 2. Softwares: 
@@ -19,13 +21,13 @@
 
 - Create database, collection (table) with MongoDB Compass 
 
-- Initialize demo project using ExpressJS
+- Initialize demo project using ExpressJS framework and Handlebars engine
 
 - Install necessary libraries using NPM: *nodemon, mongoose, body-parser*
 
 - Setup connection from ExpressJS to MongoDB 
 
-- Setup relationship between collections
+- Setup relationship between collections (One to Many)
 
 - Form input **validation**: client-side, server-side
 
