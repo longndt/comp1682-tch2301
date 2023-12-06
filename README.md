@@ -1,10 +1,10 @@
-# Final Year Project - Backend technology
+# Final Year Project - Backend technology course
 ## 1. Techniques: 
 - NodeJS: JavaScript runtime
    
 - ExpressJS: NodeJS's framework
 
-- Handlebars (hbs): NodeJS's template/view engine
+- Handlebars (hbs): NodeJS's template engine
    
 - MongoDB: NoSQL database
 ## 2. Softwares: 
@@ -12,18 +12,16 @@
    
 - NodeJS  
    
-- MongoDB Server + Compass
+- MongoDB Server + MongoDB Compass
 ## 3. Schedule:
 ### Lesson 1: (3 slots)
-- Course introduction
+- Setup working environment
 
-- Software installation + environment setup
-
-- Create database, collection (table) with MongoDB Compass 
+- Create database, collection (table), insert document (row) with MongoDB Compass 
 
 - Initialize demo project using ExpressJS framework and Handlebars engine
 
-- Install necessary libraries using NPM: *nodemon, mongoose, body-parser*
+- Install libraries: *nodemon, mongoose, body-parser*
 
 - Setup connection from ExpressJS to MongoDB 
 
