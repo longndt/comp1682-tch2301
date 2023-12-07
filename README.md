@@ -38,7 +38,7 @@
 ### Lesson 2: (3 slots)
 - Form input **validation**: client-side, server-side
 
-- Implement features: **search, sort**
+- Implement features: **filter**, **search, sort**
 
 - Install libraries: *express-session, bcryptjs*
 

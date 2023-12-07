@@ -5,7 +5,9 @@
   "name": "iphone 15",
   "price": 1000,
   "image": "https://cdn1.viettelstore.vn/images/Product/ProductImage/medium/15-Pro-3.jpg",
-  "category": "657172018f33e63ad663891d"
+   "category": {
+    "$oid": "657172018f33e63ad663891d"
+  }
 },
 {
   "_id": {
