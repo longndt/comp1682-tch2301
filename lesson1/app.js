@@ -14,6 +14,8 @@ var app = express();
 var mongoose = require('mongoose');
 //1B. set mongodb connection string + database name
 var database = "mongodb://localhost:27017/demo";
+//Note: change "localhost" to "127.0.0.1" if gets error
+//var database = "mongodb://127.0.0.1:27017/demo";
 //1C. connect to mongodb
 mongoose.connect(database)
   .then(() => console.log('connect to db succeed !'))
