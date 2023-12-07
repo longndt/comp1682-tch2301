@@ -9,6 +9,20 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+//1. config mongoose library (connect and work with database)
+//1A. import library
+var mongoose = require('mongoose');
+//1B. set mongodb connection string + database name
+var database = "mongodb://localhost:27017/demo";
+//1C. connect to mongodb
+mongoose.connect(database)
+  .then(() => console.log('connect to db succeed !'))
+  .catch((err) => console.log('connect to db failed. Error: ' + err));
+
+//2. config body-parser library (get data from client-side)
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: false }));
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');

@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "657173ad8f33e63ad6638924"
+  },
+  "name": "iphone 15",
+  "price": 1000,
+  "image": "https://cdn1.viettelstore.vn/images/Product/ProductImage/medium/15-Pro-3.jpg",
+  "category": "657172018f33e63ad663891d"
+},
+{
+  "_id": {
+    "$oid": "657173ad8f33e63ad6638925"
+  },
+  "name": "iphone 15",
+  "price": 1000,
+  "image": "https://cdn1.viettelstore.vn/images/Product/ProductImage/medium/15-Pro-3.jpg",
+  "category": {
+    "$oid": "657172018f33e63ad663891d"
+  }
+},
+{
+  "_id": {
+    "$oid": "657173ad8f33e63ad6638926"
+  },
+  "name": "macbook pro 13",
+  "price": 1500,
+  "image": "https://techland.com.vn/wp-content/uploads/2022/07/macbook-air-spacegray-gallery2-20220606_GEO_US.jpeg",
+  "category": {
+    "$oid": "657172018f33e63ad663891e"
+  }
+},
+{
+  "_id": {
+    "$oid": "657173ad8f33e63ad6638927"
+  },
+  "name": "macbook pro 13",
+  "price": 1500,
+  "image": "https://techland.com.vn/wp-content/uploads/2022/07/macbook-air-spacegray-gallery2-20220606_GEO_US.jpeg",
+  "category": {
+    "$oid": "657172018f33e63ad663891e"
+  }
+}]

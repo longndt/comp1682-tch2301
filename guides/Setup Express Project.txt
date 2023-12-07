@@ -3,7 +3,8 @@
 - Select folder for storing code
 - Right click on that folder
 - Select "Open in integrated terminal"
-- Set Terminal to CMD and set as default
+- Set Terminal to "Command Prompt"
+- set "Default Profile"
 - Type below commands to create Express web app:
 npx express-generator --view=hbs
 npm install
