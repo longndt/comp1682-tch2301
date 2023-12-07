@@ -2,9 +2,11 @@
 ## 1. Techniques:
 - NodeJS: JavaScript runtime
 
-- ExpressJS: NodeJS's framework
+- ExpressJS: NodeJS framework
 
 - Handlebars (HBS): NodeJS's view engine
+
+- Materialize: CSS framework
 
 - MongoDB: NoSQL database
 ## 2. Softwares:
@@ -14,6 +16,7 @@
   + GitHub Pull Requests & Issues
   + MongoDB for VS Code
   + hbs snippets
+  + Thunder Client
 
 - NodeJS: Back-end
 
