@@ -1,9 +1,28 @@
-Create : create(...)
-Read : find(...)
-Update (1): findByIdAndUpdate(... , ...)
-Update (2): findById(...) + updateOne(...)  |  updateMany()
-Delete (1): findByIdAndDelete(...)
-Delete (2): findById(...) + deleteOne(...)    |  deleteMany()
-Search: find({ ??? : new RegExp(??? , "i") });
-Sort (asc): find().sort({ ???: 1 })
-Sort (desc): find().sort({ ??? : -1 })
+- Create :
+        await Model.create(req.body)
+- Read (1):
+        await Model.find({})
+- Read (2):
+        await Model.findById(req.params.id)
+- Update (1):
+        await Model.findByIdAndUpdate(req.params.id, req.body)
+- Update (2):
+        var document = await Model.findById(req.params.id)
+        await Model.updateOne(document)
+- Update (3):
+        await Model.updateMany()
+- Delete (1):
+        await Model.findByIdAndDelete(req.params.id)
+- Delete (2):
+        var document = await Model.findById(req.params.id)
+        await Model.deleteOne(document)
+- Delete (3):
+        await Model.deleteMany()
+- Search:
+        await Model.find({ field : new RegExp(keyword , "i") });
+- Filter:
+        await Model.find({ field : value })
+- Sort (ascending):
+        await Model.find().sort({ field : 1 })
+- Sort (descending):
+        await Model.find().sort({ field : -1 })
