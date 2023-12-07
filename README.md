@@ -1,4 +1,4 @@
-# Final Year Project - Backend technology course
+# Final Year Project (part 2) - Backend course
 ## 1. Techniques: 
 - NodeJS: JavaScript runtime
    
