@@ -29,7 +29,7 @@
 
 - Form input **validation**: client-side, server-side
 
-- Implement **CRUD** features: Create, Read, Update, Delete
+- Implement **CRUD** features 
 ### Lesson 2: (3 slots)
 - Implement features: **search, sort**
 
