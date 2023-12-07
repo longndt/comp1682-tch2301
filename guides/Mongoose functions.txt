@@ -1,0 +1,9 @@
+Create : create(...)
+Read : find(...)
+Update (1): findByIdAndUpdate(... , ...)
+Update (2): findById(...) + updateOne(...)  |  updateMany()
+Delete (1): findByIdAndDelete(...)
+Delete (2): findById(...) + deleteOne(...)    |  deleteMany()
+Search: find({ ??? : new RegExp(??? , "i") });
+Sort (asc): find().sort({ ???: 1 })
+Sort (desc): find().sort({ ??? : -1 })

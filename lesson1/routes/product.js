@@ -8,11 +8,11 @@ var ProductModel = require('../models/ProductModel');
 //IMPORTANCE: must include "async" , "await"
 router.get('/', async (req, res) => {
    //get data from collection
-   var ProductList = await ProductModel.find({});
+   var productList = await ProductModel.find({}).populate('category');
    //load data
    //res.send(ProductList);
    //File location: views/product/index.hbs
-   res.render('product/index', { productList })
+   res.render('product/index', { productList });
 });
 
 module.exports = router;

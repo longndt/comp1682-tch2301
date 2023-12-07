@@ -8,6 +8,6 @@ var CategorySchema = mongoose.Schema(
       //popular data types: String, Number, Date, Boolean
    }
 );
-var CategoryModel = mongoose.model("danh muc", CategorySchema, "category");
+var CategoryModel = mongoose.model("category", CategorySchema, "category");
 //Note: "category" is collection name
 module.exports = CategoryModel;

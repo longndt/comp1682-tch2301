@@ -10,7 +10,13 @@ router.get('/', async (req, res) => {
    //get data from collection
    var categoryList = await CategoryModel.find({});
    //load data
-   res.send(categoryList);
+   res.render('category/index', { categoryList });
 });
+
+//SQL: DELETE FROM category WHERE _id = 'id'
+router.get('/delete/:id', async (req, res) => {
+   await CategoryModel.findByIdAndDelete(req.params.id);
+   res.redirect('/category');
+})
 
 module.exports = router;
