@@ -44,18 +44,18 @@
 
 - **Format web UI** using CSS framework
 
-- Form input **validation**: client-side, server-side
+- Form input **validation**
 
-- Implement features: **filter**, **search, **sort**
+- Implement features: **filter, search, sort**
 
 - Install packages: *express-session, bcryptjs*
 
 - **Authentication** (login/logout + register)
 
-- **Authorization**  (role-based access: admin, user,...)
-
 - **Password encryption**
 ### Lesson 3: (2 slots)
+- **Authorization**  (role-based access: admin, user,...)
+
 - Install packages: *multer, axios*
 
 - **File/image upload**
