@@ -5,7 +5,7 @@
   "name": "iphone 15",
   "price": 1000,
   "image": "https://cdn1.viettelstore.vn/images/Product/ProductImage/medium/15-Pro-3.jpg",
-   "category": {
+  "category": {
     "$oid": "657172018f33e63ad663891d"
   }
 },
@@ -13,9 +13,9 @@
   "_id": {
     "$oid": "657173ad8f33e63ad6638925"
   },
-  "name": "iphone 15",
-  "price": 1000,
-  "image": "https://cdn1.viettelstore.vn/images/Product/ProductImage/medium/15-Pro-3.jpg",
+  "name": "galaxy s23",
+  "price": 1200,
+  "image": "https://cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/Picture/Apro/Apro_product_32112/samsung-galaxy-_main_544_450.png.webp",
   "category": {
     "$oid": "657172018f33e63ad663891d"
   }
@@ -35,9 +35,9 @@
   "_id": {
     "$oid": "657173ad8f33e63ad6638927"
   },
-  "name": "macbook pro 13",
-  "price": 1500,
-  "image": "https://techland.com.vn/wp-content/uploads/2022/07/macbook-air-spacegray-gallery2-20220606_GEO_US.jpeg",
+  "name": "lg gram 17",
+  "price": 1700,
+  "image": "https://www.lg.com/vn/images/laptops/md07572633/gallery/D-03.jpg",
   "category": {
     "$oid": "657172018f33e63ad663891e"
   }
