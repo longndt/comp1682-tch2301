@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "657376705b79c2d7732b4ce4"
+  },
+  "username": "admin",
+  "password": "123456",
+  "role": "admin"
+},
+{
+  "_id": {
+    "$oid": "657376705b79c2d7732b4ce5"
+  },
+  "username": "hoa",
+  "password": "123456",
+  "role": "customer"
+},
+{
+  "_id": {
+    "$oid": "657377155b79c2d7732b4ceb"
+  },
+  "username": "tuan",
+  "password": "123456",
+  "role": "customer"
+}]
