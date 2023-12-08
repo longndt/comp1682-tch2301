@@ -42,7 +42,7 @@
 ### Lesson 2: (3 slots)
 - **Customize web layout**
 
-- **Format web UI** using CSS framework
+- **Format web UI** (using CSS framework)
 
 - Form input **validation**
 
