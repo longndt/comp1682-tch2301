@@ -12,11 +12,13 @@
       <td>{{ name }}</td>
       <td>${{ price }}</td>
       <td>
-         <img src="{{ image }}" width="100" height="100"></td>
+         <img src="{{ image }}" width="100" height="100">
+      </td>
       <td>{{ category.name }}</td>
       <td>
-         <a href="http://">Edit</a>
-         <a href="http://">Delete</a>
+         <a href="/product/edit/{{ _id }}">Edit</a>
+         <a href="/product/delete/{{_id}}"
+         onclick="return confirm('Do you want to delete this product ?')" ;>Delete</a>
       </td>
    </tr>
    {{/each}}
