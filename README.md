@@ -16,7 +16,6 @@
 
 - VS Code extensions:
   + GitHub Pull Requests & Issues
-  + MongoDB for VS Code
   + hbs snippets
   + Thunder Client
 
