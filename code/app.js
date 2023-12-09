@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 //3A. declare router (1 collection => 1 router)
 var categoryRouter = require('./routes/category');  //location: routes/category.js
 var productRouter = require('./routes/product');    //location: routes/product.js
+var authRouter = require('./routes/auth');
 
 var app = express();
 
@@ -42,6 +43,7 @@ app.use('/', indexRouter);
 //3B. declare web URL of routers
 app.use('/category', categoryRouter);
 app.use('/product', productRouter);
+app.use('/auth', authRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

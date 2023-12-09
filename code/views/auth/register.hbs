@@ -1,0 +1,22 @@
+<form method="post" onsubmit="return checkPass();">
+   <div class="container">
+      <h1>Register</h1>
+   <span id="retype_error" class="error"></span>
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="email" id="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+
+
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" id="retype" required>
+      <hr>
+      <button type="submit" class="registerbtn">Register</button>
+   </div>
+
+   <div class="container signin">
+      <p>Already have an account? <a href="#">Sign in</a>.</p>
+   </div>
+</form>

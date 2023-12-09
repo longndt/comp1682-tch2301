@@ -3,6 +3,13 @@
   Name: <input type="text" name="name" id="" required>
   <br><br>
   Price: <input type="number" name="price" id="" required>
+
+{{#if InputErrors.price}}
+<div class="error">
+  {{InputErrors.price}}
+</div>
+{{/if}}
+
   <br><br>
   Image: <input type="url" name="image" id="" required>
   <br><br>

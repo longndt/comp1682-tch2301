@@ -2,7 +2,10 @@ var mongoose = require('mongoose');
 var ProductSchema = mongoose.Schema(
    {
       name: String,
-      price: Number,
+      price: {
+         type: Number,
+         min: [0, 'Giá tiền sản phẩm không được là số âm']
+      },
       image: String,
       category: {           //"category"    : name of reference field
          type: mongoose.SchemaTypes.ObjectId,

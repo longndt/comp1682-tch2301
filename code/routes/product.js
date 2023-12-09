@@ -14,9 +14,20 @@ router.get('/add', async (req, res) => {
 })
 
 router.post('/add', async (req, res) => {
-   var product = req.body;
-   await ProductModel.create(product);
-   res.redirect('/product');
+   try {
+      var product = req.body;
+      await ProductModel.create(product);
+      res.redirect('/product');
+   }
+   catch (err) {
+      if (err.name === 'ValidationError') {
+         let  InputErrors= {};
+         for (let field in err.errors) {
+            InputErrors[field] = err.errors[field].message;
+         }
+         res.render('product/add', { InputErrors, product });
+      }
+   }
 })
 
 router.get('/edit/:id', async (req, res) => {
