@@ -1,5 +1,6 @@
 <h1>Product List</h1>
-<table border="1">
+<a class="btn" href="/product/add">Add</a>
+<table class="centered">
    <tr>
       <th>Product name</th>
       <th>Product price</th>
@@ -16,8 +17,8 @@
       </td>
       <td>{{ category.name }}</td>
       <td>
-         <a href="/product/edit/{{ _id }}">Edit</a>
-         <a href="/product/delete/{{_id}}"
+         <a class="btn orange" href="/product/edit/{{ _id }}">Edit</a>
+         <a class="btn red" href="/product/delete/{{_id}}"
          onclick="return confirm('Do you want to delete this product ?')" ;>Delete</a>
       </td>
    </tr>
