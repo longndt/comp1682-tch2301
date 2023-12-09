@@ -5,11 +5,9 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 //3A. declare router (1 collection => 1 router)
 var categoryRouter = require('./routes/category');  //location: routes/category.js
 var productRouter = require('./routes/product');    //location: routes/product.js
-
 
 var app = express();
 
@@ -41,7 +39,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 //3B. declare web URL of routers
 app.use('/category', categoryRouter);
 app.use('/product', productRouter);
@@ -62,6 +59,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(4000);
 module.exports = app;
 

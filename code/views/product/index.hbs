@@ -1,6 +1,11 @@
 <h1>Product List</h1>
-<a class="btn" href="/product/add">Add</a>
-<table class="centered">
+<a class="btn btn-primary" href="/product/add">Add</a>
+<a class="btn btn-warning" href="/product/sort/asc">Sort by name ascending</a>
+<a class="btn btn-success" href="/product/sort/desc">Sort by name descending</a>
+<form action="/product/search" method="post">
+   <input class="form-control" type="search" name="keyword" id="" placeholder="Search by product name" required>
+</form>
+<table class="table table-primary">
    <tr>
       <th>Product name</th>
       <th>Product price</th>

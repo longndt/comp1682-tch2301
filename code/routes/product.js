@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
 
 router.get('/add', async (req, res) => {
    var categoryList = await CategoryModel.find({});
-   res.render('product/add', { categoryList});
+   res.render('product/add', { categoryList });
 })
 
 router.post('/add', async (req, res) => {
@@ -22,7 +22,7 @@ router.post('/add', async (req, res) => {
 router.get('/edit/:id', async (req, res) => {
    var id = req.params.id;
    var product = await ProductModel.findById(id);
-   res.render('product/edit', { product });
+   res.render('product/edit', { product, layout: 'custom_layout' });
 })
 
 router.post('/edit/:id', async (req, res) => {
@@ -36,6 +36,22 @@ router.get('/delete/:id', async (req, res) => {
    var id = req.params.id;
    await ProductModel.findByIdAndDelete(id);
    res.redirect('/product');
+})
+
+router.post('/search', async (req, res) => {
+    var kw = req.body.keyword;
+   var productList = await  ProductModel.find({ name: new RegExp(kw, "i") });
+    res.render('product/index', { productList })
+})
+
+router.get('/sort/asc', async (req, res) => {
+   var productList = await ProductModel.find().sort({ name: 1 });
+   res.render('product/index', { productList })
+})
+
+router.get('/sort/desc', async (req, res) => {
+   var productList = await ProductModel.find().sort({ name: -1 });
+   res.render('product/index', { productList })
 })
 
 module.exports = router;
