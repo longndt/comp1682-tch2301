@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.send("<h1>Greenwich</h1>")
+  res.render('index', { layout: 'empty_layout'});
 });
 
 module.exports = router;
