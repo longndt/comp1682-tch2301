@@ -32,4 +32,10 @@ router.post('/edit/:id', async (req, res) => {
    res.redirect('/product');
 })
 
+router.get('/delete/:id', async (req, res) => {
+   var id = req.params.id;
+   await ProductModel.findByIdAndDelete(id);
+   res.redirect('/product');
+})
+
 module.exports = router;
