@@ -4,7 +4,7 @@ var ProductSchema = mongoose.Schema(
       name: String,
       price: {
          type: Number,
-         min: [0, 'Giá tiền sản phẩm không được là số âm']
+         min: [0, 'Product price can not be negative']
       },
       image: String,
       category: {           //"category"    : name of reference field

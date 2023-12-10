@@ -2,8 +2,9 @@ var express = require('express');
 var router = express.Router();
 var ProductModel = require('../models/ProductModel');
 var CategoryModel = require('../models/CategoryModel');
+const checkSession = require('../middlewares/auth');
 
-router.get('/', async (req, res) => {
+router.get('/', checkSession, async (req, res) => {
    var productList = await ProductModel.find({}).populate('category');
    res.render('product/index', { productList });
 });

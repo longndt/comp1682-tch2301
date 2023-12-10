@@ -18,12 +18,11 @@ var session = require('express-session');
 const timeout = 10000 * 60 * 60 * 24;  // 24 hours (in milliseconds)
 //config session parameters
 app.use(session({
-  secret: "practice_makes_perfect",
-  saveUninitialized: false,
+  secret: "practice_makes_perfect",  // Secret key for signing the session ID cookie
+  resave: false,                     // Forces a session that is "uninitialized" to be saved to the store
+  saveUninitialized: true,           // Forces the session to be saved back to the session store
   cookie: { maxAge: timeout },
-  resave: false
 }));
-
 
 //1. config mongoose library (connect and work with database)
 //1A. import library
@@ -52,13 +51,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
+//make session value available in view
+//IMPORTANT: put this before setting router url
 app.use((req, res, next) => {
   res.locals.username = req.session.username;
-  res.locals.userid = req.session.userid;
   next();
 });
-
 
 app.use('/', indexRouter);
 //3B. declare web URL of routers
@@ -70,8 +68,6 @@ app.use('/auth', authRouter);
 app.use(function(req, res, next) {
   next(createError(404));
 });
-
-
 
 // error handler
 app.use(function(err, req, res, next) {
