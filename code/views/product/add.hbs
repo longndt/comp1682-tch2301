@@ -2,7 +2,7 @@
   <h1>Add new product</h1>
   Name: <input type="text" name="name" id="" required>
   <br><br>
-  Price: <input type="number" name="price" id="" required>
+  Price: <input type="number" name="price" id="" required min="0">
 
 {{#if InputErrors.price}}
 <div class="error">

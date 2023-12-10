@@ -21,7 +21,7 @@ router.post('/add', async (req, res) => {
    }
    catch (err) {
       if (err.name === 'ValidationError') {
-         let  InputErrors= {};
+         let InputErrors = {};
          for (let field in err.errors) {
             InputErrors[field] = err.errors[field].message;
          }

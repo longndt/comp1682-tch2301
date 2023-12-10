@@ -29,10 +29,16 @@ router.get('/add', (req, res) => {
 
 //receive form data and insert it to database
 router.post('/add', async (req, res) => {
-   //req.body: get value by form
-   var category = req.body;
-   await CategoryModel.create(category);
-   res.redirect('/category');
+
+   if (req.session.username) {
+      //req.body: get value by form
+      var category = req.body;
+      await CategoryModel.create(category);
+      res.redirect('/category');
+   } else {
+      res.redirect('/auth/login')
+   }
+
 })
 
 router.get('/edit/:id', async (req, res) => {

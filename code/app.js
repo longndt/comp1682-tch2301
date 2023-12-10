@@ -9,8 +9,22 @@ var indexRouter = require('./routes/index');
 var categoryRouter = require('./routes/category');  //location: routes/category.js
 var productRouter = require('./routes/product');    //location: routes/product.js
 var authRouter = require('./routes/auth');
+var session = require('express-session');
+
 
 var app = express();
+//import "express-session" library for authentication
+
+//set session timeout
+const timeout = 1000000 * 60 * 60 * 24; //23
+//config session middleware
+app.use(session({
+  secret: "alien_is_existed_or_not_it_is_still_a_secret",
+  saveUninitialized: false,
+  cookie: { maxAge: timeout },
+  resave: false
+}));
+
 
 //1. config mongoose library (connect and work with database)
 //1A. import library
@@ -50,6 +64,14 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
+
+app.use((req, res, next) => {
+  res.locals.username = req.session.username;
+  res.locals.userid = req.session.userid;
+  next();
+});
+
+
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
@@ -59,6 +81,8 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
+
+
 });
 
 module.exports = app;
