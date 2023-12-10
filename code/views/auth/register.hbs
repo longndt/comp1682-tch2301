@@ -1,20 +1,27 @@
-<form method="post" action="/auth/register">
-   <div class="container">
-      <h1>Register</h1>
-   <span id="retype_error" class="error"></span>
-      <label for="username"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="un" id="username" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="pw" id="password" required>
-
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" id="retype" required>
-      <hr>
-      <button type="submit" class="registerbtn">Register</button>
+<form action="/auth/register" method="post">
+   <h4 class="center-align bold">Register</h4>
+   <div class="row">
+      <div class="input-field col s12 m4 offset-m4">
+         <label>Username</label>
+         <input class="validate" type="text" name="username" required id="">
+      </div>
    </div>
-
-   <div class="container signin">
-      <p>Already have an account? <a href="#">Sign in</a>.</p>
+   <div class="row">
+      <div class="input-field col s12 m4 offset-m4">
+         <label>Password</label>
+         <input class="validate" type="password" name="password" required id="password">
+      </div>
+   </div>
+   <div class="row">
+      <div class="input-field col s12 m4 offset-m4">
+         <label>Retype Password</label>
+         <span class="retype_error"></span>
+         <input class="validate" type="password" name="retype" required id="retype">
+      </div>
+   </div>
+   <div class="row">
+      <div class="col s12 m4 offset-m4 center-align">
+         <input class="btn" type="submit" value="Register">
+      </div>
    </div>
 </form>

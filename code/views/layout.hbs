@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>{{title}}</title>
+  <title>Product Management System</title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
 
   <script src="/scripts/materialize.js"></script>
@@ -18,25 +18,34 @@
 </head>
 
 <body>
-  {{!-- Navigation bar --}}
+  {{!-- Page header --}}
   <div class="container">
     <nav class="blue bold upper">
       <ul>
         <li>
-          <a href="/product">Product</a>
+          <a href="/">HOME</a>
         </li>
         <li>
-          <a href="/category">Category</a>
+          <a href="/product">PRODUCT</a>
+        </li>
+        <li>
+          <a href="/category">CATEGORY</a>
+        </li>
+        <li>
+          <a href="/auth/logout">LOGOUT ({{ username }})</a>
         </li>
       </ul>
     </nav>
 
-    {{{body}}}
-
+    {{!-- Page content --}}
+    <div class="row">
+      {{{body}}}
+    </div>
+    {{!-- Page footer --}}
     <footer class="page-footer">
       <div class="footer-copyright">
-        <div class="container">
-          © 2023 - Copyright by Greenwich Vietnam
+        <div class="container center">
+          © 2023 - ExpressJS Web Demo
         </div>
       </div>
     </footer>

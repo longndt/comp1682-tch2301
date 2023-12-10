@@ -7,31 +7,26 @@ var bcrypt = require('bcryptjs');
 var salt = 8;       //set a random value
 
 router.get('/register', (req, res) => {
-   res.render('auth/register', { layout: 'empty_layout'})
+   res.render('auth/register', { layout: 'auth_layout'})
 })
 
 router.post('/register', async (req, res) => {
    try {
-      var pass = req.body.pw;
+      var pass = req.body.password;
       var hash = bcrypt.hashSync(pass, salt);
       var user = {
-         username: req.body.un,
-         password: hash,
-         role: "user"
+         username: req.body.username,
+         password: hash
       }
       await UserModel.create(user);
-      console.log('add succeed')
+      res.redirect('/auth/login')
    } catch (err) {
-      console.log('add failed. ' + err)
+      console.log(err)
    }
 })
 
 router.get('/login', (req, res) => {
-   res.render('auth/login' , { layout: 'empty_layout'})
-})
-
-router.get('/welcome', (req, res) => {
-   res.render('auth/welcome')
+   res.render('auth/login' , { layout: 'auth_layout'})
 })
 
 router.post('/login', async (req, res) => {
@@ -40,20 +35,20 @@ router.post('/login', async (req, res) => {
    if (user) {
       var hash = bcrypt.compareSync(login.password, user.password)
       if (hash) {
-         //res.send("<h1>login succeed</h1>")
          //initialize session after login success
-         req.session.username = login.username
-
-         res.render('auth/welcome');
+         req.session.user = user
+         req.session.username = user.username
+         res.redirect('/');
       }
       else {
-         //res.send("<h1>login failed</h1>")
          res.redirect('/auth/login');
       }
    }
 });
 
-
-
+router.get('/logout', (req, res) => {
+   req.session.destroy();
+   res.redirect("/auth/login");
+})
 
 module.exports = router

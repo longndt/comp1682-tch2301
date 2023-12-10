@@ -33,7 +33,7 @@ router.post('/add', async (req, res) => {
 router.get('/edit/:id', async (req, res) => {
    var id = req.params.id;
    var product = await ProductModel.findById(id);
-   res.render('product/edit', { product, layout: 'custom_layout' });
+   res.render('product/edit', { product });
 })
 
 router.post('/edit/:id', async (req, res) => {
@@ -51,17 +51,17 @@ router.get('/delete/:id', async (req, res) => {
 
 router.post('/search', async (req, res) => {
     var kw = req.body.keyword;
-   var productList = await  ProductModel.find({ name: new RegExp(kw, "i") });
+   var productList = await ProductModel.find({ name: new RegExp(kw, "i") }).populate('category');
     res.render('product/index', { productList })
 })
 
 router.get('/sort/asc', async (req, res) => {
-   var productList = await ProductModel.find().sort({ name: 1 });
+   var productList = await ProductModel.find().sort({ name: 1 }).populate('category');
    res.render('product/index', { productList })
 })
 
 router.get('/sort/desc', async (req, res) => {
-   var productList = await ProductModel.find().sort({ name: -1 });
+   var productList = await ProductModel.find().sort({ name: -1 }).populate('category');
    res.render('product/index', { productList })
 })
 
