@@ -50,9 +50,9 @@ router.get('/delete/:id', async (req, res) => {
 })
 
 router.post('/search', async (req, res) => {
-    var kw = req.body.keyword;
-   var productList = await ProductModel.find({ name: new RegExp(kw, "i") }).populate('category');
-    res.render('product/index', { productList })
+   var keyword = req.body.keyword;
+   var productList = await ProductModel.find({ name: new RegExp(keyword, "i") }).populate('category');
+   res.render('product/index', { productList })
 })
 
 router.get('/sort/asc', async (req, res) => {

@@ -3,7 +3,7 @@ var UserSchema = mongoose.Schema(
    {
       username: {
          type: String,
-         //unique: true,
+         unique: true,
          required: true
       },
       password: {

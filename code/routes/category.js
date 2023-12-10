@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
-//remember to import model before use
+//remember to import models before use
 var CategoryModel = require('../models/CategoryModel');
+var ProductModel = require('../models/ProductModel');
 
 //URL: localhost:3000/category
 //SQL: SELECT * FROM category
@@ -48,4 +49,11 @@ router.post('/edit/:id', async (req, res) => {
    res.redirect('/category');
 })
 
+router.get('/detail/:id', async (req, res) => {
+   var id = req.params.id;
+   var productList = await ProductModel.find({ category: id });
+   res.render('product/index', { productList })
+})
 module.exports = router;
+
+

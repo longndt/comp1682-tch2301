@@ -12,13 +12,13 @@ var authRouter = require('./routes/auth');
 
 var app = express();
 
-//import "express-session" library for authentication
+//import "express-session" library
 var session = require('express-session');
 //set session timeout
-const timeout = 10000 * 60 * 60 * 24;
-//config session middleware
+const timeout = 10000 * 60 * 60 * 24;  // 24 hours (in milliseconds)
+//config session parameters
 app.use(session({
-  secret: "alien_is_existed_or_not_it_is_still_a_secret",
+  secret: "practice_makes_perfect",
   saveUninitialized: false,
   cookie: { maxAge: timeout },
   resave: false
