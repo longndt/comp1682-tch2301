@@ -19,51 +19,50 @@
   + hbs snippets
   + Thunder Client
 
-- NodeJS: Back-end
+- NodeJS: Backend
 
 - MongoDB Server: Database server
 
 - MongoDB Compass: Database management
-## 3. Schedule:
+## 3. Syllabus:
 ### Lesson 1: (3 slots)
-- Setup working environment
+-	Create database, collection and insert document with MongoDB Compass
 
-- Create database, collection (table), insert document (row) with MongoDB Compass
+-	Initialize ExpressJS web app with Handlebars (HBS) view engine
 
-- Initialize demo project using ExpressJS framework and Handlebars view engine
+-	Install necessary packages with NPM: nodemon, mongoose, body-parser
 
-- Install packages: *nodemon, mongoose, body-parser*
+-	Establish database connection in ExpressJS
 
-- Setup connection from ExpressJS to MongoDB
+-	Setup relationship between collections (One to Many)
 
-- Setup relationship between collections (One to Many)
-
-- Implement **CRUD** features
+-	Implement CRUD features
 ### Lesson 2: (3 slots)
-- **Customize web layout**
+-	Customize web layout/template
 
-- **Format web UI** (using CSS framework)
+-	Decorate web UI with Materialize CSS framework
 
-- Form input **validation**
+-	Implement features: filter, search, sort
 
-- Implement features: **filter, search, sort**
+-	Form validation: client-side, server-side
 
-- Install packages: *express-session, bcryptjs*
+-	Install new packages: express-session, bcryptjs
 
-- **Authentication** (login/logout + register)
+-	Authentication (login/logout + register)
 
-- **Password encryption**
+-	Password encryption 
+
 ### Lesson 3: (2 slots)
-- **Authorization**  (role-based access: admin, user,...)
+- Authorization  (role-based access)
 
-- Install packages: *multer, axios*
+- Install new packages: multer, axios
 
-- **File/image upload**
+- Image upload
 
-- **Fetch API**
+- Fetch API
 ### Lesson 4: (2 slots)
-- Install packages: *cors, jsonwebtoken*
+- Install new packages: cors, jsonwebtoken
 
-- Create and enable **API sharing** (for consuming API in front-end)
+- Enable CORS to exchange API with frontend  
 
-- Create **JSON Web Token** (for authentication in front-end)
+- Create JWT to authenticate user in frontend
