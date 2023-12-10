@@ -53,16 +53,16 @@
 -	Password encryption 
 
 ### Lesson 3: (2 slots)
-- Authorization  (role-based access)
+-  Authorization  (role-based access)
 
-- Install new packages: multer, axios
+-  Install new packages: multer, axios
 
-- Image upload
+-  Image upload
 
-- Fetch API
+-  Fetch API
 ### Lesson 4: (2 slots)
-- Install new packages: cors, jsonwebtoken
+-  Install new packages: cors, jsonwebtoken
 
-- Enable CORS to exchange API with frontend  
+-  Enable CORS to exchange API with frontend  
 
-- Create JWT to authenticate user in frontend
+-  Create JWT to authenticate user in frontend
