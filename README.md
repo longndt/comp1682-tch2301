@@ -6,7 +6,7 @@
 
 - ExpressJS: NodeJS framework
 
-- Handlebars (HBS): NodeJS's view engine
+- Handlebars (HBS): view engine
 
 - Materialize: CSS framework
 
@@ -14,10 +14,10 @@
 ## 2. Softwares:
 - VS Code: Code Editor
 
-- VS Code extensions:
-  + GitHub Pull Requests & Issues
-  + hbs snippets
-  + Thunder Client
+  + Extensions:
+    * GitHub Pull Requests & Issues
+    * hbs snippets
+    * Thunder Client
 
 - NodeJS: Backend
 
@@ -37,6 +37,7 @@
 -	Setup relationship between collections (One to Many)
 
 -	Implement CRUD features
+
 ### Lesson 2: (3 slots)
 -	Customize web layout/template
 
@@ -53,16 +54,15 @@
 -	Password encryption 
 
 ### Lesson 3: (2 slots)
--  Authorization  (role-based access)
+-   Authorization (role-based access)
 
--  Install new packages: multer, axios
+-   Image upload with "multer" package
 
--  Image upload
+-   Create and test Restful APIs for CRUD features
 
--  Fetch API
 ### Lesson 4: (2 slots)
--  Install new packages: cors, jsonwebtoken
+-   Enable Restful API exchange in backend with "cors" package  
 
--  Enable CORS to exchange API with frontend  
+-   Initialize new VueJS project as frontend 
 
--  Create JWT to authenticate user in frontend
+-	Consume Restful APIs from backend with "axios" package
