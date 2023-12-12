@@ -3,14 +3,13 @@ var router = express.Router();
 //remember to import models before use
 var CategoryModel = require('../models/CategoryModel');
 var ProductModel = require('../models/ProductModel');
+const { checkLoginSession } = require('../middlewares/auth');
 
 //URL: localhost:3000/category
 //SQL: SELECT * FROM category
 //must include "async", "await"
 router.get('/', async (req, res) => {
-   //retrieve data from "categories" collection
    var categoryList = await CategoryModel.find({});
-   //render view and pass data
    res.render('category/index', { categoryList });
 });
 

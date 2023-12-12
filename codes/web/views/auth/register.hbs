@@ -4,6 +4,11 @@
       <div class="input-field col s12 m4 offset-m4">
          <label>Username</label>
          <input class="validate" type="text" name="username" required id="">
+         {{#if InputErrors.username}}
+         <div class="error">
+            {{InputErrors.username}}
+         </div>
+         {{/if}}
       </div>
    </div>
    <div class="row">

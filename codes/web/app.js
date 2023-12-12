@@ -4,6 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+const { checkAdminSession } = require('./middlewares/auth');
+
+
 var indexRouter = require('./routes/index');
 //3A. declare router (1 collection => 1 router)
 var categoryRouter = require('./routes/category');  //location: routes/category.js
@@ -55,14 +58,19 @@ app.use(express.static(path.join(__dirname, 'public')));
 //IMPORTANT: put this before setting router url
 app.use((req, res, next) => {
   res.locals.username = req.session.username;
+  res.locals.role = req.session.role;
   next();
 });
 
 app.use('/', indexRouter);
+
+app.use('/category', checkAdminSession);
+
 //3B. declare web URL of routers
 app.use('/category', categoryRouter);
 app.use('/product', productRouter);
 app.use('/auth', authRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

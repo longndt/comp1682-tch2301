@@ -11,4 +11,7 @@ a {
   color: red;
   background-color: yellow;
   text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
 }
