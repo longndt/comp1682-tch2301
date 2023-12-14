@@ -9,6 +9,7 @@ var indexRouter = require('./routes/index');
 var categoryRouter = require('./routes/category');  //location: routes/category.js
 var productRouter = require('./routes/product');    //location: routes/product.js
 var authRouter = require('./routes/auth');
+var apiRouter = require('./routes/api');
 
 var app = express();
 
