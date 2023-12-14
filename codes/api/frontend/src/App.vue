@@ -3,7 +3,7 @@
 import axios from "axios";
 
 //declare the backend API url
-var backendAPI = "http://localhost:3000/api/";
+var backendAPI = "http://localhost:3000/api";
 
 export default {
   data() {
@@ -66,7 +66,7 @@ export default {
             <button
               @click="deleteProduct(product._id)"
               class="btn orange"
-              onclick="return confirm('Are you sure to delete this product ?'"
+              onclick="return confirm('Are you sure to delete this product ?')"
             >
               Delete
             </button>
