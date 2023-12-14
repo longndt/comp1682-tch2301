@@ -13,6 +13,10 @@ var apiRouter = require('./routes/api');
 
 var app = express();
 
+//import and config cors (for exchange API)
+var cors = require('cors');
+app.use(cors());
+
 //import "express-session" library
 var session = require('express-session');
 //set session timeout
