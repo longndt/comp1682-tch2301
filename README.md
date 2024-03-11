@@ -1,5 +1,4 @@
 # Final Year Project (part 2) - Backend course
-## Recordings: https://feedu.sharepoint.com/:f:/s/Code/EiEBHBhTlL5BpZQoMbBTE8QBji6CXg8vl0Ll2oWXdPZXVQ
 
 ## 1. Techniques:
 - NodeJS: JavaScript runtime
